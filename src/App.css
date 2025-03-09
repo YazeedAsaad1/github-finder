@@ -1,0 +1,284 @@
+:root {
+  font-family: "Space Mono", monospace;
+}
+* {
+  box-sizing: border-box;
+}
+.githubContainer.dark {
+  --div-background-color:#1e2a47;
+  --background-color:#141d2f;
+  --title-font-color:#FFFFFF;
+  --paragraph-font-color:#FFFFFF;
+  --hover-color:#90A4D4;
+}
+
+.githubContainer.light {
+  --div-background-color:#fefefe;
+  --background-color:#f6f8ff;
+  --title-font-color:#2B3442;
+  --paragraph-font-color:#4B6A9B;
+  --hover-color:#000000;
+}
+
+.githubContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: -8px;
+  background-color: var(--background-color);
+  height: 100vh;
+}
+.justToMakeTheWidth {
+  max-width: 730px;
+}
+.githubLogoAndMode {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.githubLogoAndMode h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--title-font-color);
+}
+.githubModeSpanDark, .githubModeSpanLight {
+  color: var(--paragraph-font-color);
+  margin-left: auto;
+  margin-right: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.githubModeSpanDarkSvg:hover path {
+  fill: var(--hover-color);
+}
+.githubModeSpanLightSvg:hover path {
+  fill: var(--hover-color);
+}
+.noResults {
+  position: absolute;
+  right: 116px;
+  top: 12.5px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #F74646;
+}
+.githubSearchForm {
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--div-background-color);
+  max-width: 730px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.githubForm {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.githubForm img {
+  margin: 0 10px;
+}
+.githubformButton {
+  width: 106px;
+  height: 50px;
+  background-color: #0079FF;
+  color: #FFF;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.githubformButton:hover {
+  background-color: #60ABFF;
+}
+.searchUsernameInput {
+  background-color: var(--div-background-color);
+  color: var(--paragraph-font-color);
+  border: none;  
+  flex: 1;
+  font-size: 18px;
+}
+.githubSizeControler {
+  display: flex;
+  margin: 40px;
+}
+.githubTheContent {
+  display: flex;
+  margin: 20px 0;
+  background-color: var(--div-background-color);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.githubContent {
+  padding: 0 10px 0 30px;
+}
+.githubTheContentImage img {
+  width: 117px;
+  border-radius: 50%;
+}
+.githubTitleAndDate {
+  display: flex;
+  flex-direction: column;
+}
+.githubTitle h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--title-font-color);
+}
+.githubTitle span {
+  color: #0079FF;
+  font-size: 16px;
+}
+.ithubRemoveParagraph {
+  font-size: 15px;
+  color: var(--paragraph-font-color);
+}
+.githubTitleHeaderBigSize {
+  display: flex;
+  justify-content: space-between;
+}
+.githubTitleHeaderBigSize p {
+  color: var(--paragraph-font-color);
+}
+.githubRemoveParagraph {
+  color: var(--paragraph-font-color);
+}
+
+.githubFollowers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--background-color);
+  border-radius: 15px;
+}
+.githubRepos, .githubTheFollowers, .githubFollowing {
+  display: inline-block;
+  margin: 5px 40px;
+}
+.githubReposWord,
+.githubTheFollowersWord,
+.githubFollowingWord {
+  font-size: 13px;
+  margin: 7px 0;
+  color: var(--title-font-color);
+}
+.githubReposNumber,
+.githubTheFollowersNumber,
+.githubFollowingNumber {
+  font-size: 22px;
+  margin: 7px 0;
+  color: var(--title-font-color);
+}
+
+
+
+.githubInfomations {
+  display: flex;
+  font-size: 15px;
+  color: var(--paragraph-font-color);
+}
+.githubTwitterAndAt {
+  margin-left: 35px;  
+}
+.availableInfo, .notAvailableInfo {
+  display: flex;
+  align-items: center;
+}
+.githubLocationParagraph, .githubUrlParagraph, .githubTwitterParagraph, .githubBuildingParagraph {
+  padding-left: 15px;
+}
+.githubDisplayNone {
+  display: none;
+}
+.githubDisplayNone img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.availableInfo path {
+  fill: var(--paragraph-font-color);
+}
+.availableInfo p {
+  color: var(--paragraph-font-color);
+}
+.notAvailableInfo p {
+  color: #8e94a3;
+}
+.notAvailableInfo path {
+  fill: #8e94a3;
+}
+
+@media (max-width:665px) {
+  .githubTitleHeaderBigSize {
+    display: none;
+  }
+  .githubTheContentImage {
+    display: none;
+  }
+  .justToMakeTheWidth {
+    padding: 0 30px;
+  }
+  .githubContent {
+    padding-left: 0;
+  }
+  .githubformButton {
+    font-size: 14px;
+    width: 84px;
+    height: 46px;
+  }
+  .searchUsernameInput {
+    font-size: 13px;
+  }
+  .githubTitleHeaderBigSize {
+    flex-direction: column;
+  }
+  .githubTitle h1 {
+    font-size: 16px;
+  }
+  .githubDisplayNone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .githubTheFollowersWord, .githubFollowingWord, .githubReposWord {
+    font-size: 11px;
+  }
+  .githubFollowingNumber, .githubTheFollowersNumber, .githubReposNumber {
+    font-size: 16px;
+  }
+  .githubTitleHeaderBigSize2 {
+    padding-left: 20px;
+  }
+  .githubTitleHeaderBigSize2 p {
+    font-size: 13px;
+    color: var(--paragraph-font-color);
+  }
+  .githubTitle span {
+    font-size: 13px;
+  }
+  .githubRemoveParagraph {
+    font-size: 13px;
+    display: inline-block;
+  }
+  .githubTitleAndDate p {
+    display: inline-block;
+    width: auto;
+  }
+  .githubTwitterAndAt {
+    margin: 0;
+  }
+  .githubRepos, .githubTheFollowers, .githubFollowing {
+    margin: 5px 5%;
+  }
+  .githubInfomations {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    color: var(--paragraph-font-color);
+  }
+}
